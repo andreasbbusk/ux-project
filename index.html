@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Content description -->
+    <meta name="description" content="Velkommen til Nippon måltidskasser.">
+    <!-- SEO keywords -->
+    <meta name="keywords" content="madplan, måltidskasser, familie madplan, madplan familie, nippon, familievenlige opskrifter, familievenlige retter,  ">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="img/logo.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/typewriter.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/loginModal.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Velkommen til Nippon</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html"><img src="img/logo.webp" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/maaltidskasser.html">Måltidskasser</a>
+                    <div class="dropdown-content">
+                        <a href="/familiekasse.html">Familiekassen</a>
+                        <a href="/error.html">Den skræddersyede</a>
+                        <a href="/error.html">Den kalorielette</a>
+                        <a href="/error.html">Den vegetariske</a>
+                        <a href="/error.html">Den traditionelle</a>
+                        <a href="/error.html">Fiskekassen</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Sådan virker det</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Levering</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Om os</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Hvorfor os?</a>
+                        <a href="/error.html">Kunderne siger</a>
+                        <a href="/error.html">Bæredygtighed</a>
+                        <a href="/error.html">Samarbejdspartnere</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Kundeservice</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Kontakt</a>
+                        <a href="/error.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <button id="myBtn">Log ind</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Login</h3>
+                        <h1>Velkommen <br> til Nippon</h1>
+                        <p>Log in eller registrer dig hos Nippon for at kunne tilgå vores bestillingsservice</p>
+                    </div>
+                    <div class="login-form">
+                        <span class="close">&times;</span>
+                        <div class="login-info">
+                            <h2>Din konto</h2>
+                            <div class="form">
+                                <form action="/action_page.php"></form>
+                                <label for="username">Brugernavn</label>
+                                <input type="text" name="username" id="username"><br>
+                                <label id="password" for="pwd">Adgangskode</label>
+                                <input type="password" id="pwd" name="pwd"><br><br>
+                                <input type="submit" id="submit" value="Submit">
+                                <div class="sign-up">
+                                    <p>Har du ikke en konto?</p>
+                                    <a href="/error.html">Opret dig</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="front-hero">
+            <!-- Typewritertekst til hero-section -->
+            <div class="hero-header">
+                <h1>Måltidskasser der
+                    <span class="skrevet-tekst"></span>
+                    <span class="cursor blink">&nbsp;</span>
+                </h1>
+            </div>
+            <p>Udvalgte kvalitetsråvarer og specialiteter, frisk frugt og grønt. Altid af økologisk oprindelse.</p>
+            <a class="btn" id="hero-btn" href="/maaltidskasser.html">Udforsk vores måltidskasser</a>
+        </section>
+
+        <section class="icon-section">
+            <h1>Hvorfor vælge Nippon?</h1>
+            <div class="icons">
+                <div class="front-icons">
+                    <img src="img/ikonfamilien.webp" alt="Ikon">
+                    <h3>Skab mindeværdige stunder med familien</h3>
+                    <p>Del glæden ved madlavning og nyd kvalitetstid sammen omkring køkkenbordet.</p>
+                </div>
+                <div class="front-icons">
+                    <img src="img/ikonmiljoe.webp" alt="Ikon">
+                    <h3>Mindre madspild og miljøvenligt valg</h3>
+                    <p>Gør en positiv forskel for miljøet ved at vælge måltidskasser, der giver dig præcis de
+                        ingredienser, du har brug for, og minimerer emballageaffald.</p>
+                </div>
+                <div class="front-icons">
+                    <img src="img/ikonvariation.webp" alt="Ikon">
+                    <h3>Variation uden besvær</h3>
+                    <p>Udforsk nye smagsoplevelser uden besvær ved at få spændende opskrifter og ingredienser leveret
+                        direkte til din dør.</p>
+                </div>
+                <div class="front-icons">
+                    <img src="img/ikonjapan.webp" alt="Ikon">
+                    <h3>Oplev den japanske madkultur</h3>
+                    <p>Oplev dybden af japanske madkultur lige fra dit eget køkken, uden behov for at tage på jagt i
+                        specialbutikker.</p>
+                </div>
+                <div class="front-icons">
+                    <img src="img/ikontidsbesparelse.webp" alt="Ikon">
+                    <h3>Tidsbesparende</h3>
+                    <p>Frigør din tid fra indkøb og planlægning med måltidskasser, der leverer alt, hvad du behøver for
+                        hurtige og lækre måltider.</p>
+                </div>
+                <div class="front-icons">
+                    <img src="img/ikonraavarer.webp" alt="Ikon">
+                    <h3>Friske råvarer</h3>
+                    <p>Nyd den bedste smag og ernæring med friske ingredienser leveret direkte fra producenten til din
+                        tallerken.</p>
+                </div>
+            </div>
+            <a class="btn" id="btn-icon" href="/error.html">Læs mere</a>
+        </section>
+        <section class="info-front">
+            <div class="info-card">
+                <div>
+                    1
+                </div>
+                <h1>
+                    Vælg din måltidskasse
+                </h1>
+                <p>
+                    Vælg din foretrukne måltidskasse blandt vores brede udvalg.
+                </p>
+                <img src="img/maaltidskasse-1.webp" alt="Billede af måltidskasse">
+            </div>
+            <div class="info-card2">
+                <div>
+                    2
+                </div>
+                <h1>
+                    Angiv dine præferencer
+                </h1>
+                <p>
+                    Tilpas din måltidskasse efter lige præcis dine behov. Fravælg eller tilvælg retter baseret på dine
+                    ønsker.
+                </p>
+                <img src="img/ordre-1.webp" alt="Ordre">
+            </div>
+            <div class="info-card">
+                <div>
+                    3
+                </div>
+                <h1>
+                    Opret dig hos Nippon
+                </h1>
+                <p>
+                    Det er nu tid til at oprette dig som bruger hos Nippon.
+                </p>
+                <img src="img/bruger-1.webp" alt="Bruger">
+            </div>
+            <div class="info-card2">
+                <div>
+                    4
+                </div>
+                <h1>
+                    Fleksibel levering
+                </h1>
+                <p>
+                    Vælg hvor og hvornår du vil have leveret din måltidskasse. Så klarer Nippon resten.
+                </p>
+                <img src="img/kalender-1.webp" alt="Billede af kalender">
+            </div>
+            <div class="info-card">
+                <div>
+                    5
+                </div>
+                <h1>
+                    Ordrebekræftelse
+                </h1>
+                <p>
+                    Når din bestilling er gennemført vil du modtage en ordrebekræftelse, og du kan vente spændt på din
+                    kasse.
+                </p>
+                <img src="img/bekraeftelse-1.webp" alt="Billede af bekræftelsesordre">
+            </div>
+            <div class="info-card2">
+                <div>
+                    6
+                </div>
+                <h1>
+                    Friskt & lækkert
+                </h1>
+                <p>
+                    Gør plads i køleskabet! Din Nippon måltidskasse er på vej. Nyd nemme, lækre måltider uden besværet
+                    ved indkøb og madplanlægning.
+                </p>
+                <img src="img/glad-1.webp" alt="Billede af glad person">
+            </div>
+        </section>
+        <section class="front-vurdering">
+            <div class="vurdering-title">
+                <h1>Hvad siger kunderne?</h1>
+            </div>
+            <div class="vurdering-info">
+                <h4>Andreas Busk</h4>
+                <p>Multimediedesigner</p>
+                <img src="img/stjerne.webp" alt="5 stjerner">
+                <p>“Dette er virkelig et fantastisk alternativ
+                    til den travle hverdag.
+                    Det giver os meget mere tid med
+                    børnene og bidrager til en hyggelig
+                    atmosfære.”</p>
+            </div>
+        </section>
+        <section class="carousel">
+            <h1>Få et glimt af hverdagen med Nippons måltidskasser</h1>
+            <div class="img-slider">
+                <div class="slider-wrapper">
+                    <div id="img-container-front" class="img-container">
+                        <img src="img/kids.webp" alt="Glade børn">
+                        <img src="img/madglaede.webp" alt="Lækker ret">
+                        <img src="img/madpakke.webp" alt="Madpakke">
+                        <img src="img/mor.webp" alt="Mor & søn">
+                        <img src="img/T-shirt.webp" alt="Beskidt barn">
+                    </div>
+                </div>
+                <button id="next">&#8250;</button>
+                <button id="prev">&#8249;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="nyhedsbrev">
+                <form action="/action_page.php">
+                    <h2>Tilmeld dig vores nyhedsbrev</h2>
+                    <div>
+                        <input id="footer-text" type="text" placeholder="Email address" name="mail" required>
+                        <input id="footer-input" type="submit" value=">">
+                    </div>
+                    <div>
+                        <img id="trust_ikon" src="img/trust.webp" alt="trustpilot">
+                    </div>
+                </form>
+            </div>
+            <div class="kasser">
+                <a class="overskrift_footer" href="/maaltidskasser.html">Måltidskasser</a><br><br>
+                <a href="/familiekasse.html">Familiekassen</a><br>
+                <a href="/error.html">Den kalorielette</a><br>
+                <a href="/error.html">Den vegetariske</a><br>
+                <a href="/error.html">Fiskekassen</a><br>
+                <a href="/error.html">Den traditionelle</a><br>
+                <a href="/error.html">Den skræddersyede</a><br>
+            </div>
+            <div class="virker">
+                <a class="overskrift_footer" href="/error.html">Sådan virker det</a><br><br>
+                <a href="/error.html">Levering</a><br>
+            </div>
+            <div class="om">
+                <a class="overskrift_footer" href="/error.html">Om os</a><br><br>
+                <a href="/error.html">Hvorfor os?</a><br>
+                <a href="/error.html">Kunderne siger</a><br>
+                <a href="/error.html">Bæredygtighed</a><br>
+                <a href="/error.html">Samarbejdspartnere</a>
+            </div>
+            <div class="service">
+                <a class="overskrift_footer" href="/error.html">Kundeservice</a><br><br>
+                <a href="/error.html">Kontakt</a><br>
+                <a href="/error.html">FAQ</a><br><br>
+
+                <h3>Følg os</h3>
+                <img id="ikon_face" src="img/facebook.webp" alt="facebook">
+                <img id="ikon_insta" src="img/instagram.webp" alt="instagram">
+                <p id="sted">Nippon A/S – Bernhardt Jensens Blvd 72, 8000 Aarhus C</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

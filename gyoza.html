@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Content description -->
+    <meta name="description" content="Vores opskrift på Gyoza.">
+    <!-- SEO keywords -->
+    <meta name="keywords" content="måltidskasser, børnevenlige måltidskasser, familievenlige opskrifter, familiemad, skræddersyede måltidskasse, familiekasse, nippon">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="img/logo.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/nutrition.js" defer></script>
+    <script src="scripts/loginModal.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Gyoza</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html"><img src="img/logo.webp" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/maaltidskasser.html">Måltidskasser</a>
+                    <div class="dropdown-content">
+                        <a href="/familiekasse.html">Familiekassen</a>
+                        <a href="/error.html">Den skræddersyede</a>
+                        <a href="/error.html">Den kalorielette</a>
+                        <a href="/error.html">Den vegetariske</a>
+                        <a href="/error.html">Den traditionelle</a>
+                        <a href="/error.html">Fiskekassen</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Sådan virker det</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Levering</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Om os</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Hvorfor os?</a>
+                        <a href="/error.html">Kunderne siger</a>
+                        <a href="/error.html">Bæredygtighed</a>
+                        <a href="/error.html">Samarbejdspartnere</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Kundeservice</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Kontakt</a>
+                        <a href="/error.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <button id="myBtn">Log ind</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Login</h3>
+                        <h1>Velkommen <br> til Nippon</h1>
+                        <p>Log in eller registrer dig hos Nippon for at kunne tilgå vores bestillingsservice</p>
+                    </div>
+                    <div class="login-form">
+                        <span class="close">&times;</span>
+                        <div class="login-info">
+                            <h2>Din konto</h2>
+                            <div class="form">
+                                <form action="/action_page.php"></form>
+                                <label for="username">Brugernavn</label>
+                                <input type="text" name="username" id="username"><br>
+                                <label for="pwd">Adgangskode</label>
+                                <input type="password" id="pwd" name="pwd"><br><br>
+                                <input type="submit" id="submit" value="Submit">
+                                <div class="sign-up">
+                                    <p>Har du ikke en konto?</p>
+                                    <a href="/error.html">Opret dig</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Øverste billede -->
+        <div class="øverste_billede">
+            <img src="img/gyozaoeverstebillede.webp" alt="Opskrift til gyoza">
+            <div class="overskrift_øverstebillede">Gyoza</div>
+        </div>
+
+        <!-- Streg under billedet -->
+        <div class="streg"></div>
+
+        <!-- Tekst under billedet, der beskriver opskriften -->
+        <div class="info-opskrift">
+            <div class="tekst-opskrift">I aften nyder vi en delikatesse - dumplings! Disse små fyldte dejpakker er fyldt
+                med smag og tekstur. Vi kombinerer hakket kød, grøntsager og krydderier, indpakket i en tynd dej og
+                enten stegt eller dampet. Serveret varmt og dampende, er dumplings en perfekt mundfuld af saftigt fyld
+                og blød dej. Dyppet i sojasauce eller chiliolie, er disse delikatesser et hit ved enhver lejlighed!
+            </div>
+            <div class="praktisk-opskrift">
+                <span style="font-weight: bold;">Samlet tid:</span> 40 minutter
+                <br>
+                <br>
+                <span style="font-weight: bold;">Sværhedsgrad:</span> Medium
+            </div>
+        </div>
+
+        <!-- 2 bokse øverst med ingredienser -->
+        <div class="ingredienser-box">
+            <!-- Boks øverst til venstre med inkluderet ingredienser -->
+            <div class="inkluderet-box">
+                <h3>Ingredienser</h3>
+                <div class="inkluderet-grid-container">
+                    <div class="inkluderet-grid-item">
+                        <img src="img/hakketsvinekoed.webp" alt="Hakket svinekød">
+                        <p>Hakket svinekød</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/guleroedder.webp" alt="Gulerødder">
+                        <p>Gulerødder</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/aeg.png" alt="Æg">
+                        <p>Æg</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/hvidløg.webp" alt="Hvidløg">
+                        <p>Hvidlød</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/soya.webp" alt="Soya">
+                        <p>Soya</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/lime.webp" alt="Lime">
+                        <p>Lime</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/foraarsloeg.webp" alt="Friske forårsløg">
+                        <p>Friske forårsløg</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/spidskaal.webp" alt="Spidskål">
+                        <p>Spidskål</p>
+                    </div>
+                    <div class="inkluderet-grid-item">
+                        <img src="img/gyozawrappers.webp" alt="Gyoza wrappers">
+                        <p>Gyoza wrappers</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Boks øverst til venstre med ikke inkluderet ingredienser -->
+            <div class="ikkeinkluderet-box">
+                <h3>Ikke inkluderet</h3>
+                <div class="ikkeinkluderet-grid-container">
+                    <div class="ikkeinkluderet-grid-item">
+                        <img src="img/salt.webp" alt="Salt">
+                        <p>Salt</p>
+                    </div>
+
+                    <div class="ikkeinkluderet-grid-item">
+                        <img src="img/vand.webp" alt="Vand">
+                        <p>Vand</p>
+                    </div>
+
+                    <div class="ikkeinkluderet-grid-item">
+                        <img src="img/olie.webp" alt="Olivenolie">
+                        <p>Olivenolive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fremgangsmåde step for step -->
+        <div class="fremgangsmåde-box">
+            <h2>Fremgangsmåde</h2>
+            <div class="fremgangsmåde-container">
+                <div class="fremgangsmåde-grid-item">
+                    <img src="img/step1.webp" alt="step1">
+                    <span class="cirkel">1</span>
+                    <p>Hak hvidløg fint. <br> Riv gulerødderne og snit spidskålen fint.</p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <img src="img/step2.webp" alt="step2">
+                    <span class="cirkel">2</span>
+                    <p>Bland hakket svinekød med hvidløg, forårsløg, gulerødder, spidskål, æg, sojasauce og lidt salt og
+                        peber.</p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <img src="img/step3.webp" alt="step3">
+                    <span class="cirkel">3</span>
+                    <p>Rør dyppelsen sammen og sæt den til side, imens du laver gyozaerne.</p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <video controls muted>
+                        <source src="img/step4.mov" type="video/mp4">
+                    </video>
+                    <span class="cirkel">4</span>
+                    <p>Placér en god teskefuld fyld på midten af et stykke gyozapapir. <br> Fugt kanterne med lidt koldt
+                        vand og fold dem. Se evt. denne video her af, hvordan man folder dem.</p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <video controls muted>
+                        <source src="img/step5.mov" type="video/mp4">
+                    </video>
+                    <span class="cirkel">5</span>
+                    <p>Se denne video for at lære, hvordan dine børn kan være med til at folde gyozaerne. </p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <img src="img/step6.webp" alt="step6">
+                    <span class="cirkel">6</span>
+                    <p>Fold alle dine gyozaer og placer dem på en tallerken, indtil alle er foldet.</p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <img src="img/step7.webp" alt="step7">
+                    <span class="cirkel">7</span>
+                    <p>Placér gyozaerne på en opvarmet pande med olie. <br> Steg ved mellemvarme i cirka 3 minutter til
+                        de har taget farve under bunden.</p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <img src="img/step8.webp" alt="step8">
+                    <span class="cirkel">8</span>
+                    <p>Tilsæt 1 dl vand og lad dem dampe under låg i cirka 3-5 minutter.</p>
+                </div>
+
+                <div class="fremgangsmåde-grid-item">
+                    <img src="img/step9.webp" alt="step9">
+                    <span class="cirkel">9</span>
+                    <p>Anret dem på et fad og drys med finthakket forårsløg. <br>
+                        Server dem sammen med dyppelsen.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 bokse nederst med næringsindhold og bedømmelser -->
+        <div class="næringsindhold-bedømmelse-box">
+            <!-- Boks nederst til venstre med næringsindhold -->
+
+            <div class="næringsindhold-box">
+                <h3>Næringsindhold</h3>
+                <div class="nutrition-btn">
+                    <button id="portion">Pr. portion</button>
+                    <button id="gram">Pr. 100g</button>
+                </div>
+                <div class="nutrition">
+                    <div class="nutrition-header">
+                        <h6>Energi (kcal)</h6>
+                        <h6>Fedt</h6>
+                        <h6>Mættet fedt</h6>
+                        <h6>Kulhydrat</h6>
+                        <h6>Kostfibre</h6>
+                        <h6>Protein</h6>
+                        <h6>Salt</h6>
+                    </div>
+                    <div id="nutrition-numbers" class="nutrition-numbers">
+                        <p>560 kcal</p>
+                        <p>23g</p>
+                        <p>5g</p>
+                        <p>35g</p>
+                        <p>3g</p>
+                        <p>34g</p>
+                        <p>5,4g</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boks nederst til højre med bedømmelser -->
+            <div class="bedømmelse-box">
+                <form action="/action_page.php">
+                    <h3>Din bedømmelse</h3>
+                    <label for="kommentarer">Kommentarer eller forslag</label>
+                    <input id="kommentarer" type="text" name="kommentarer"
+                        placeholder="Fx gode fifs, forslag eller kommentarer til opskriften">
+                    <label for="navn">Navn</label>
+                    <input id="navn" type="text" name="navn" placeholder="Fx Ida">
+                    <label for="email">E-mail adresse</label>
+                    <input id="email" type="text" name="email" placeholder="Fx Idanielsen@gmail.com">
+                    <input type="submit" value="Indsend bedømmelse" id="submit-btn">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="nyhedsbrev">
+                <form action="/action_page.php">
+                    <h2>Tilmeld dig vores nyhedsbrev</h2>
+                    <div>
+                        <input id="footer-text" type="text" placeholder="Email address" name="mail" required>
+                        <input id="footer-input" type="submit" value=">">
+                    </div>
+                    <div>
+                        <img id="trust_ikon" src="img/trust.webp" alt="trustpilot">
+                    </div>
+                </form>
+            </div>
+            <div class="kasser">
+                <a class="overskrift_footer" href="/maaltidskasser.html">Måltidskasser</a><br><br>
+                <a href="/familiekasse.html">Familiekassen</a><br>
+                <a href="/error.html">Den kalorielette</a><br>
+                <a href="/error.html">Den vegetariske</a><br>
+                <a href="/error.html">Fiskekassen</a><br>
+                <a href="/error.html">Den traditionelle</a><br>
+                <a href="/error.html">Den skræddersyede</a><br>
+            </div>
+            <div class="virker">
+                <a class="overskrift_footer" href="/error.html">Sådan virker det</a><br><br>
+                <a href="/error.html">Levering</a><br>
+            </div>
+            <div class="om">
+                <a id="overskrift_footer" href="/error.html">Om os</a><br><br>
+                <a href="/error.html">Hvorfor os?</a><br>
+                <a href="/error.html">Kunderne siger</a><br>
+                <a href="/error.html">Bæredygtighed</a><br>
+                <a href="/error.html">Samarbejdspartnere</a>
+            </div>
+            <div class="service">
+                <a class="overskrift_footer" href="/error.html">Kundeservice</a><br><br>
+                <a href="/error.html">Kontakt</a><br>
+                <a href="/error.html">FAQ</a><br><br>
+
+                <h3>Følg os</h3>
+                <img id="ikon_face" src="img/facebook.webp" alt="facebook">
+                <img id="ikon_insta" src="img/instagram.webp" alt="instagram">
+                <p id="sted">Nippon A/S – Bernhardt Jensens Blvd 72, 8000 Aarhus C</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

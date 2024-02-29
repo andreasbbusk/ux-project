@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Content description -->
+    <meta name="description" content="Her er en oversigt og beskrivelse af vores måltidskasser.">
+    <!-- SEO keywords -->
+    <meta name="keywords" content="måltidskasser, børnevenlige måltidskasser, familievenlige opskrifter, familiemad, skræddersyede måltidskasse, familiekasse, nippon">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="img/logo.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="scripts/accordion.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/loginModal.js" defer></script>
+    <title>Nippons måltidskasser</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html"><img src="img/logo.webp" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/maaltidskasser.html">Måltidskasser</a>
+                    <div class="dropdown-content">
+                        <a href="/familiekasse.html">Familiekassen</a>
+                        <a href="/error.html">Den skræddersyede</a>
+                        <a href="/error.html">Den kalorielette</a>
+                        <a href="/error.html">Den vegetariske</a>
+                        <a href="/error.html">Den traditionelle</a>
+                        <a href="/error.html">Fiskekassen</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Sådan virker det</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Levering</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Om os</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Hvorfor os?</a>
+                        <a href="/error.html">Kunderne siger</a>
+                        <a href="/error.html">Bæredygtighed</a>
+                        <a href="/error.html">Samarbejdspartnere</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-top" href="/error.html">Kundeservice</a>
+                    <div class="dropdown-content">
+                        <a href="/error.html">Kontakt</a>
+                        <a href="/error.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <button id="myBtn">Log ind</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Login</h3>
+                        <h1>Velkommen <br> til Nippon</h1>
+                        <p>Log in eller registrer dig hos Nippon for at kunne tilgå vores bestillingsservice</p>
+                    </div>
+                    <div class="login-form">
+                        <span class="close">&times;</span>
+                        <div class="login-info">
+                            <h2>Din konto</h2>
+                            <div class="form">
+                                <form action="/action_page.php"></form>
+                                <label for="username">Brugernavn</label>
+                                <input type="text" name="username" id="username"><br>
+                                <label id="password" for="pwd">Adgangskode</label>
+                                <input type="password" id="pwd" name="pwd"><br><br>
+                                <input type="submit" id="submit" value="Submit">
+                                <div class="sign-up">
+                                    <p>Har du ikke en konto?</p>
+                                    <a href="/error.html">Opret dig</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="maaltidskasser">
+            <div class="breadcrumb">
+                <a href="/index.html">Forside</a>
+                <div>></div>
+                <a href="/maaltidskasser.html">Måltidskasser</a>
+            </div>
+            <div class="maaltid-header">
+                <h1>Vores måltidskasser</h1>
+                <p>Nippons måltidskasser bringer en verden af smag direkte til din dør! Vores nøje sammensatte kasser
+                    byder
+                    på
+                    autentiske, smagfulde oplevelser fra det japanske køkken, men også kendte, klassiske danske retter.
+                    <br>Vores måltidskasser er designet til at gøre japansk madlavning tilgængelig og nem for alle, fra
+                    den
+                    travle
+                    børnefamilie til den nysgerrige foodie.
+                </p>
+            </div>
+            <div class="kasse-cards">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/Familiekassen.webp" alt="Familiekassen">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-ikoner">
+                            <div class="kasse-ikon">
+                                <img src="img/time.webp" alt="Time">
+                                <p>30-45 min</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/calendar.webp" alt="calendar">
+                                <p>3-5 dage</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/user.webp" alt="user">
+                                <p>2-5 pers</p>
+                            </div>
+                        </div>
+                        <div class="card-info-grid">
+                            <div>
+                                <h1>Familiekassen</h1>
+                                <p>Alsidig til familien + en lille overraskelse</p>
+                            </div>
+                            <div>
+                                <a class="arrow-btn" href="/familiekasse.html">&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/lav_egen.webp" alt="skræddersyede kasse">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-ikoner">
+                            <div class="kasse-ikon">
+                                <img src="img/time.webp" alt="time">
+                                <p>30-60 min</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/calendar.webp" alt="calendar">
+                                <p>3-5 dage</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/user.webp" alt="user">
+                                <p>2-5 pers</p>
+                            </div>
+                        </div>
+                        <div class="card-info-grid">
+                            <div>
+                                <h1>Den skræddersyede</h1>
+                                <p>Din smag, dine måltider</p>
+                            </div>
+                            <div>
+                                <a class="arrow-btn">&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/denkalorielette.webp" alt="Den kalorielette kasse">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-ikoner">
+                            <div class="kasse-ikon">
+                                <img src="img/time.webp" alt="time">
+                                <p>15-45 min</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/calendar.webp" alt="calendar">
+                                <p>3-5 dage</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/user.webp" alt="user">
+                                <p>2-5 pers</p>
+                            </div>
+                        </div>
+                        <div class="card-info-grid">
+                            <div>
+                                <h1>Den kalorielette</h1>
+                                <p>Let og sundt</p>
+                            </div>
+                            <div>
+                                <a class="arrow-btn" href="/error.html">&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/VEGAN.webp" alt="Den vegetariske kasse">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-ikoner">
+                            <div class="kasse-ikon">
+                                <img src="img/time.webp" alt="time">
+                                <p>15-30 min</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/calendar.webp" alt="calendar">
+                                <p>3-5 dage</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/user.webp" alt="user">
+                                <p>2-5 pers</p>
+                            </div>
+                        </div>
+                        <div class="card-info-grid">
+                            <div>
+                                <h1>Den vegetariske</h1>
+                                <p>Friskt og smagfuldt</p>
+                            </div>
+                            <div>
+                                <a class="arrow-btn" href="/error.html">&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/traditionel.webp" alt="Den traditionelle">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-ikoner">
+                            <div class="kasse-ikon">
+                                <img src="img/time.webp" alt="time">
+                                <p>30-45 min</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/calendar.webp" alt="calendar">
+                                <p>3-5 dage</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/user.webp" alt="user">
+                                <p>2-5 pers</p>
+                            </div>
+                        </div>
+                        <div class="card-info-grid">
+                            <div>
+                                <h1>Den traditionelle</h1>
+                                <p>Hjemlig mad</p>
+                            </div>
+                            <div>
+                                <a class="arrow-btn" href="/error.html">&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/FISK.webp" alt="Fiskekassen">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-ikoner">
+                            <div class="kasse-ikon">
+                                <img src="img/time.webp" alt="time">
+                                <p>15-45 min</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/calendar.webp" alt="calendar">
+                                <p>3-5 dage</p>
+                            </div>
+                            <div class="kasse-ikon">
+                                <img src="img/user.webp" alt="user">
+                                <p>2-5 pers</p>
+                            </div>
+                        </div>
+                        <div class="card-info-grid">
+                            <div>
+                                <h1>Fiskekassen</h1>
+                                <p>Havets fristelser</p>
+                            </div>
+                            <div>
+                                <a class="arrow-btn" href="/error.html">&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Ofte stillede spørgsmål</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="acc-btn" aria-expanded="false"><span class="icon" aria-hidden="true"></span><span
+                            class="accordion-title">Hvilke
+                            måltidskasser tilbyder vi?</span></button>
+                    <div class="accordion-content">
+                        <p>Vi tilbyder en række forskellige typer måltidskasser. Det er også muligt at skræddersy din
+                            helt egen kasse.</p>
+                        <p>Læs mere om det her: <a href="#">Måltidskasser</a></p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="acc-btn" aria-expanded="false"><span class="icon" aria-hidden="true"></span><span
+                            class="accordion-title">Hvordan
+                            bestiller jeg en måltidskasse?</span></button>
+                    <div class="accordion-content">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="acc-btn" aria-expanded="false"><span class="icon" aria-hidden="true"></span><span
+                            class="accordion-title">Hvilke måltidskasser tilbyder i?</span></button>
+                    <div class="accordion-content">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="acc-btn" aria-expanded="false"><span class="icon" aria-hidden="true"></span><span
+                            class="accordion-title">Hvad med bæredygtighed?</span></button>
+                    <div class="accordion-content">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="nyhedsbrev">
+                <form action="/action_page.php">
+                    <h2>Tilmeld dig vores nyhedsbrev</h2>
+                    <div>
+                        <input id="footer-text" type="text" placeholder="Email address" name="mail" required>
+                        <input id="footer-input" type="submit" value=">">
+                    </div>
+                    <div>
+                        <img id="trust_ikon" src="img/trust.webp" alt="trustpilot">
+                    </div>
+                </form>
+            </div>
+            <div class="kasser">
+                <a class="overskrift_footer" href="/maaltidskasser.html">Måltidskasser</a><br><br>
+                <a href="/familiekasse.html">Familiekassen</a><br>
+                <a href="/error.html">Den kalorielette</a><br>
+                <a href="/error.html">Den vegetariske</a><br>
+                <a href="/error.html">Fiskekassen</a><br>
+                <a href="/error.html">Den traditionelle</a><br>
+                <a href="/error.html">Den skræddersyede</a><br>
+            </div>
+            <div class="virker">
+                <a class="overskrift_footer" href="/error.html">Sådan virker det</a><br><br>
+                <a href="/error.html">Levering</a><br>
+            </div>
+            <div class="om">
+                <a id="overskrift_footer" href="/error.html">Om os</a><br><br>
+                <a href="/error.html">Hvorfor os?</a><br>
+                <a href="/error.html">Kunderne siger</a><br>
+                <a href="/error.html">Bæredygtighed</a><br>
+                <a href="/error.html">Samarbejdspartnere</a>
+            </div>
+            <div class="service">
+                <a class="overskrift_footer" href="/error.html">Kundeservice</a><br><br>
+                <a href="/error.html">Kontakt</a><br>
+                <a href="/error.html">FAQ</a><br><br>
+
+                <h3>Følg os</h3>
+                <img id="ikon_face" src="img/facebook.webp" alt="facebook">
+                <img id="ikon_insta" src="img/instagram.webp" alt="instagram">
+                <p id="sted">Nippon A/S – Bernhardt Jensens Blvd 72, 8000 Aarhus C</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
